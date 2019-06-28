@@ -26,7 +26,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        tableView.reloadData()
-
     }
    
 }
@@ -287,6 +286,9 @@ func foo(){
 
 func interview5(){
     print("unowned是必选相当于assign引用，weak是可选相当于弱引用，打破成环效应")
+     let a1 = ArithmeticController()
+     a1.merger()
+    a1.quickSortTest()
 }
 func interview6(){
     let a = [1,2,3,4,5,6,7,8]
@@ -333,6 +335,7 @@ func interview10(){
 func interview11(){
     
 }
+
 ///关联类型需要泛型约束
 ///Protocol 'Equatable' can only be used as a generic constraint because it has Self or associated type requirements
 //Binary operator '==' cannot be applied to two 'Equatable' operands

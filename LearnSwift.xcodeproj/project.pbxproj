@@ -12,6 +12,7 @@
 		7B612E3D22A515700066D120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B612E3B22A515700066D120 /* Main.storyboard */; };
 		7B612E3F22A515730066D120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B612E3E22A515730066D120 /* Assets.xcassets */; };
 		7B612E4222A515730066D120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B612E4022A515730066D120 /* LaunchScreen.storyboard */; };
+		7B6A278922C6014C002E9437 /* ArithmeticController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A278822C6014C002E9437 /* ArithmeticController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7B612E3E22A515730066D120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B612E4122A515730066D120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B612E4322A515730066D120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B6A278822C6014C002E9437 /* ArithmeticController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticController.swift; sourceTree = "<group>"; };
 		7BE2E5AB22B37574000660AB /* Swift性能优化.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Swift性能优化.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 			children = (
 				7B612E3722A515700066D120 /* AppDelegate.swift */,
 				7B612E3922A515700066D120 /* ViewController.swift */,
+				7B6A278822C6014C002E9437 /* ArithmeticController.swift */,
 				7BE2E5AB22B37574000660AB /* Swift性能优化.md */,
 				7B612E3B22A515700066D120 /* Main.storyboard */,
 				7B612E3E22A515730066D120 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B612E3A22A515700066D120 /* ViewController.swift in Sources */,
+				7B6A278922C6014C002E9437 /* ArithmeticController.swift in Sources */,
 				7B612E3822A515700066D120 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
