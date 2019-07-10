@@ -26,6 +26,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        tableView.reloadData()
+        let treeHelper = BinaryTreeHelper(["A","B","C"])
+        let note: BinaryTreeNote? = treeHelper.createTree()
+        print(note ?? "")
+        print("\n\n前序遍历")
+        print(treeHelper.preOrderTraverse(note))
+        print("\n\n中序遍历")
+        print(treeHelper.inOrderTraverse(note))
+        print("\n\n后序遍历")
+        print(treeHelper.afterOrderTraverse(note))
+        print("\n\n层序遍历")
+        print(treeHelper.levelOrder(note))
     }
    
 }
