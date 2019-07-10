@@ -73,38 +73,41 @@ extension ArithmeticController{
 // MARK: - 快速排序
 extension ArithmeticController{
     func quickSortTest(){
-        var test = [12,12,23,4,55,20,45]
-        let result = quickSort(&test, 0, test.count - 1)
-        print("归并操作后"+"\(result)")
+        var test = [1,12,34,4,5,20,45]
+        print("快速排序"+"\(quickSort(&test, 0, test.count - 1))")
     }
-    func quickSort(_ arr: inout [Int],_ left: Int,_ right: Int){
+    //快速排序
+    func quickSort(_ arr:inout [Int],_ left:Int,_ right:Int) {
+        
         var l = left
         var r = right
-        if l < r {
-            while l < r{
+        
+        if l < r  {
+            while l < r {
+                
                 while arr[r] >= arr[left] && l < r{
                     r -= 1
                 }
+                
                 while arr[l] < arr[left] && l < r{
                     l += 1
                 }
-                if l < r{
+                
+                if l < r {
                     _swap(&arr, l, r)
                 }
+                
             }
             _swap(&arr, left, l)
-            quickSort(&arr, left, l)
-            quickSort(&arr, l + 1, right)
+            quickSort(&arr,left,l)
+            quickSort(&arr,l+1,right)
+            print(arr as NSArray)
         }
         
     }
-    /// 交换两个数
-    ///
-    /// - Parameters:
-    ///   - arr: <#arr description#>
-    ///   - left: <#left description#>
-    ///   - right: <#right description#>
-    fileprivate func _swap(_ arr: inout [Int],_ left: Int,_ right: Int){
+    
+    //交换两个数
+    func _swap(_ arr:inout [Int],_ left:Int,_ right:Int){
         let temp = arr[left]
         arr[left] = arr[right]
         arr[right] = temp
